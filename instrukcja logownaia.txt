@@ -1,0 +1,2 @@
+SQL Server tools 20
+sql server managment studio 20
