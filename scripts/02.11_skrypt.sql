@@ -75,3 +75,16 @@ Select avg(Freight) as 'myto', ShipCountry
 From Orders
 Group by ShipCountry
 Order by avg(Freight) desc
+
+
+Ilosc zamowien do poszczegolnych misat
+
+Select Count(OrderID), ShipCity
+From Orders
+Group by ShipCity
+
+Podaj idpracownikow i liczbe przyjetych przez nich zamowie jako liczba_zamowien
+
+Select EmployeeID, count(OrderId) as 'liczba_zamowien'
+From Orders
+Group by  EmployeeID
